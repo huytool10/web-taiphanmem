@@ -392,7 +392,28 @@
   <!-- Footer -->
   <footer class="border-t border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row gap-4 items-center justify-between text-sm text-slate-400">
-      <div>© 2026 HRM System</div>
+      <div class="rainbow-text">© 2026 Developed by Nguyen Quang Huy</div>
+  <style>
+    .rainbow-text {
+     font-weight: bold;
+     font-size: 16px;
+  background: linear-gradient(
+    90deg,
+    red, orange, yellow, green, cyan, blue, violet
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: rainbowMove 5s linear infinite;
+}
+
+@keyframes rainbowMove {
+  0% { background-position: 0% }
+  100% { background-position: 100% }
+}
+</style>
+      
       <div class="flex items-center gap-6">
         <a href="#" class="hover:text-white transition">Chính sách bảo mật</a>
         <a href="#" class="hover:text-white transition">Liên hệ</a>
